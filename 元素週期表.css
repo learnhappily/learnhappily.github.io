@@ -1,0 +1,53 @@
+            body{
+                font-family: 微軟正黑體;
+                background: linear-gradient(to bottom, lightskyblue, darkblue); 
+                color: #ffffff;
+                -moz-user-select : none;
+                -webkit-user-select: none;
+            }
+            p{
+                font-size: 30px;
+                display: inline;
+            }
+            .UnNull{ 
+                border: 0.1px solid orange;
+                height: 50px;
+                width: 50px;
+                float: left;
+                float: up;
+                text-align: center;
+                line-height: 50px;
+                font-size: 20;
+            }
+            td{
+                border: 0.1px solid transparent;
+                height: 50px;
+                width: 50px;
+                float: left;
+                text-align: center;
+                line-height: 50px;
+            }
+            table{
+                border-collapse: collapse;
+            }
+            a{
+                text-decoration: none;    
+            }
+            a:link {
+                color: #ffffff;
+            }
+            a:visited {
+                color: #ffffff;
+            }
+            
+            details{
+                display: inline;
+                float: right;
+                padding: 3px;
+                font-size: 20px;
+            }
+            pre{
+                font-size: 16px;
+                font-family: 微軟正黑體;
+            }
+        
