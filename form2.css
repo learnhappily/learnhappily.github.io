@@ -31,9 +31,7 @@
     }
 
     #top{
-        margin: auto;
-        padding-top: 10%;
-        padding-bottom: 10%;
+        padding: 10%;
         font-size: 50px;
         color: #796bcf;
         text-shadow: 15px 15px 15px #9999ff;
