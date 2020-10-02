@@ -1,0 +1,88 @@
+﻿*:focus {
+    outline: none;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Noto Sans TC";
+}
+
+*:not(h1, h2, h3, h4, h5, h6, code) {
+    font-family: 'Microsoft JhengHei';
+}
+
+@media screen and (min-width: 1200px) {
+    /*window大於1200px*/
+    /*nav style */
+    .item {
+        margin: 0px;
+        font-size: 20px;
+        text-decoration: none;
+        float: right;
+    }
+    
+    input.item {
+        font-size: 15px;  
+        margin-top: 17px;
+    }
+    
+    input.item:hover {
+        cursor: text;
+    }
+
+    .item:hover {
+        cursor: pointer;
+    }
+    
+    .item::after{
+        content: "";
+        display: block;
+        margin-top: 0.5px;
+        border-bottom: 2px solid #0af;
+        transform: scaleX(0);
+        transition: all .3s;
+    }
+    
+    .item:hover::after{
+        transform: scaleX(1);
+    }
+
+    #bar {
+        display: none;
+    }
+    
+    #logo{
+        width: 90px;
+        height: 90px;
+        margin-left: 20px; 
+    }
+    
+    button.item {
+        background: none;
+        border: none;
+    }
+    
+    nav {
+        background-color: rgba(255,255,255,0.7);
+    }
+    /*nav style end */
+}
+
+@media screen and (min-width: 481px) and (max-width: 959px){
+    /*window大於481px,小於959px*/
+    .item {
+        font-size: 25px;
+    }
+
+    #bar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /*window小於480px*/
+}
+
+@media screen and (max-device-width: 480px) {
+    /*device小於480px*/
+}
