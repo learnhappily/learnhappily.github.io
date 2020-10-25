@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+*:focus {
+    outline: none !important;
+}
+
+/* @media screen and (min-width: 1200px) { */
+    /*window大於1200px*/
+    /*nav style */
+    nav {
+        background-color: rgba(255, 255, 255, 0.9);
+        position: sticky !important;
+        top: 0;
+    }
+    
+    #logo {
+        width: 90px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: -25px;
+        margin-bottom: -25px;
+    }
+
+    .nav-link {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-left: 20px;
+        font-size: 25px; 
+        font-family: cwTeXYen, Arial;
+    }
+
+    #search {
+        font-size: 20px; 
+        border: 0.5px solid #000000;
+    }
+
+    a.nav-link::after{
+        content: "";
+        display: block;
+        width: inherit;
+        margin-top: -5px;
+        border-bottom: 2px solid #0af;
+        transform: scaleX(0);
+        transition: all .3s;
+    }
+    
+    a.nav-link:hover::after{
+        transform: scaleX(1);
+    }
+    /* nav style end */
+    /*footer style*/ 
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+/* } */
+
+@media screen and (max-width: 480px) {
+    /*window小於480px*/
+}
+
+@media screen and (max-device-width: 480px) {
+    /*device小於480px*/
+}
