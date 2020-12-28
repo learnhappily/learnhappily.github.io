@@ -1,37 +1,78 @@
-@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
 
 *:focus {
     outline: none !important;
 }
 
-/* @media screen and (min-width: 1200px) { */
+body {
+    background-color: #c7c7c7;
+}
+
+nav {
+    background-color: #555555;
+    position: sticky !important;
+    top: 0;
+    z-index: 1;
+}
+
+#search {
+    font-size: 18px; 
+    border: 0.5px solid #000000;
+    color: #000000 !important;
+}
+
+#logo {
+    width: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: -25px;
+    margin-bottom: -25px;
+}
+
+@media screen and (min-width: 1200px) {
     /*window大於1200px*/
-    /*nav style */
-    nav {
-        background-color: rgba(255, 255, 255, 0.9);
-        position: sticky !important;
-        top: 0;
-    }
-    
-    #logo {
-        width: 90px;
-        padding-top: 0;
-        padding-bottom: 0;
-        margin-top: -25px;
-        margin-bottom: -25px;
+    #home {
+        margin-left: 90px;
+        margin-right: 90px;
+        padding-left: 70px;
+        padding-right: 70px;
     }
 
+    .card {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 2px solid #eeeeee;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    
+    .card-img {
+        margin-left: calc(50% - 75px);
+        width: 150px;
+        margin-top: 10px;
+    }
+
+    h1 {
+        font-family: "Poppins";
+        margin-left: 200px;
+        margin-bottom: 2rem;
+    }
+
+    .content {
+        margin-left: 200px;
+        margin-right: 200px;    
+        line-height: 1.5;
+        letter-spacing: 1px;
+        margin-bottom: 1.5rem;
+    }
+    /*nav style */
     .nav-link {
         padding-top: 0;
         padding-bottom: 0;
         margin-left: 20px;
-        font-size: 25px; 
-        font-family: cwTeXYen, Arial;
-    }
-
-    #search {
         font-size: 20px; 
-        border: 0.5px solid #000000;
+        color: #ffffff !important;
     }
 
     a.nav-link::after{
@@ -48,17 +89,38 @@
         transform: scaleX(1);
     }
     /* nav style end */
+    hr {
+        border: 0.5px dashed #888888;
+    }
     /*footer style*/ 
     footer {
-        position: relative;
-        bottom: 0;
+        margin: 0 !important;
+        padding-bottom: 15px !important;
     }
-/* } */
+}
+
+@media screen and (min-width: 481px) and (max-width: 959px) {
+    /*window大於481px,小於959px*/
+    /*nav style*/
+
+    #search {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 480px) {
     /*window小於480px*/
-}
+    /*nav style */
 
-@media screen and (max-device-width: 480px) {
-    /*device小於480px*/
+    .nav-link {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 20px;
+        font-size: 25px; 
+        font-family: cwTeXYen, Arial;
+    }
+
+    #search {
+        display: none;
+    }
 }
