@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
-
 *:focus {
     outline: none !important;
 }
@@ -16,8 +15,19 @@ nav {
     z-index: 1;
 }
 
+footer {
+    margin: 0 !important;
+    padding-bottom: 15px !important;
+}
+
+.card-img {
+    margin-left: calc(50% - 75px);
+    width: 150px;
+    margin-top: 10px;
+}
+
 #search {
-    font-size: 18px; 
+    font-size: 18px;
     border: 0.5px solid #000000;
     color: #000000 !important;
 }
@@ -26,56 +36,49 @@ nav {
     width: 60px;
     padding-top: 0;
     padding-bottom: 0;
-    margin-top: -25px;
-    margin-bottom: -25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-@media screen and (min-width: 1200px) {
-    /*window大於1200px*/
-    #home {
-        margin-left: 90px;
-        margin-right: 90px;
-        padding-left: 70px;
-        padding-right: 70px;
-    }
+.nav-link {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 20px;
+    color: #ffffff !important;
+}
 
-    .card {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border: 2px solid #eeeeee;
-        cursor: pointer;
-        border-radius: 10px;
-    }
-    
+.card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #eeeeee;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: "Poppins";
+    margin-left: 200px;
+    margin-bottom: 2rem;
+}
+
+.content {
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+    /*window大於1200px*/
     .card-img {
         margin-left: calc(50% - 75px);
         width: 150px;
         margin-top: 10px;
     }
-
-    h1 {
-        font-family: "Poppins";
-        margin-left: 200px;
-        margin-bottom: 2rem;
-    }
-
-    .content {
-        margin-left: 200px;
-        margin-right: 200px;    
-        line-height: 1.5;
-        letter-spacing: 1px;
-        margin-bottom: 1.5rem;
-    }
     /*nav style */
     .nav-link {
-        padding-top: 0;
-        padding-bottom: 0;
-        margin-left: 20px;
-        font-size: 20px; 
-        color: #ffffff !important;
+        font-size: 20px;
     }
-
-    a.nav-link::after{
+    /* a.nav-link::after{
         content: "";
         display: block;
         width: inherit;
@@ -83,26 +86,25 @@ nav {
         border-bottom: 2px solid #0af;
         transform: scaleX(0);
         transition: all .3s;
-    }
-    
-    a.nav-link:hover::after{
+    } */
+    a.nav-link:hover::after {
         transform: scaleX(1);
     }
     /* nav style end */
     hr {
         border: 0.5px dashed #888888;
     }
-    /*footer style*/ 
-    footer {
-        margin: 0 !important;
-        padding-bottom: 15px !important;
-    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 959px) {
     /*window大於481px,小於959px*/
     /*nav style*/
-
+    .home {
+        margin-left: 90px;
+        margin-right: 90px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
     #search {
         display: none;
     }
@@ -111,15 +113,12 @@ nav {
 @media screen and (max-width: 480px) {
     /*window小於480px*/
     /*nav style */
-
     .nav-link {
         padding-top: 10px;
         padding-bottom: 10px;
         margin-left: 20px;
-        font-size: 25px; 
-        font-family: cwTeXYen, Arial;
+        font-size: 20px;
     }
-
     #search {
         display: none;
     }
